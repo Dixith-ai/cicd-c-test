@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum &mdash; House of Distinction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="crown">♛</div>
+    <p class="hero-eyebrow">Est. MMXXV &nbsp;·&nbsp; House of Distinction</p>
+    <h1 class="hero-title">Aurum</h1>
+    <p class="hero-subtitle">Where timeless craft meets sovereign elegance. Every detail, a declaration.</p>
+    <div class="divider">
+      <span></span>
+      <div class="divider-gem"></div>
+      <span></span>
+    </div>
+    <a href="#features" class="btn">Discover the Collection</a>
+  </section>
+
+  <!-- ── Features ── -->
+  <section class="features" id="features">
+    <div class="card reveal">
+      <span class="card-icon">✦</span>
+      <p class="card-title">Rare Materials</p>
+      <p class="card-text">Sourced from the world's most coveted origins — each piece carries the weight of centuries and the promise of eternity.</p>
+    </div>
+    <div class="card reveal">
+      <span class="card-icon">◈</span>
+      <p class="card-title">Master Craft</p>
+      <p class="card-text">Shaped by hands that have devoted lifetimes to perfection. No shortcuts. No compromises. Only the absolute finest.</p>
+    </div>
+    <div class="card reveal">
+      <span class="card-icon">❋</span>
+      <p class="card-title">Private Atelier</p>
+      <p class="card-text">An intimate experience reserved for those who understand that true luxury is never rushed, never replicated.</p>
+    </div>
+  </section>
+
+  <!-- ── Quote ── -->
+  <section class="quote-section">
+    <span class="quote-mark reveal">"</span>
+    <blockquote class="reveal">
+      Luxury is not about price. It is about the feeling of being exactly where you belong.
+    </blockquote>
+    <cite class="reveal">— The Aurum Manifesto</cite>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    &copy; 2025 Aurum &nbsp;·&nbsp; All Rights Reserved &nbsp;·&nbsp; ♛
+  </footer>
+
+  <script>
+    // Smooth scroll reveal
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.15 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
